@@ -30,6 +30,7 @@ addToDoButton.addEventListener('click', function(){
     para.innerText = inputField.value;
     toDoContainer.appendChild(para);
     inputField.value = "";
+    localStorage.setItem("toDoContainer",toDoContainer.innerHTML)
     
 // creating eventlistener
     para.addEventListener('click', function(){
